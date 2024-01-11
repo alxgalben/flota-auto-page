@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Homepage</title>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #000; height: 10vh;">
+    <div class="container-fluid">
+      <img src="logo-white.png" alt="Travis Logo" width="130" height="auto" class="logo">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="margin-left: 30px;">Rent a Car</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Private Transfers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Rent for Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Drive & Fun</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Locations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Car Fleet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Offers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <ion-icon size="large" name="search" style="color: white; margin-left: 30px;" class="search-image"
+              data-bs-toggle="modal" data-bs-target="#staticBackdrop"></ion-icon>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li><ion-icon size="large" name="search" style="color: white; margin-left: 30px;" class="search-image"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop"></ion-icon></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Rent a Car</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Private Transfers</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Rent for Business</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Drive & Fun</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Locations</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Car Fleet</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Offers</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">News</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Contact Us</a></li>
+      </ul>
+    </nav>
+
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 100000000;">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <!-- Search form -->
+          <div class="row">
+            <div class="col-9">
+                <input class="form-control" id="search-field" type="text" placeholder="What are you searching for?" aria-label="Search" style="width: 100%;">
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                <button type="button" class="btn btn-warning">Search</button>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Slider -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div id="app" style="position: absolute; width: 100%;"></div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="height: 90vh; width: 100%;">
+      <div class="carousel-item active">
+        <img src="1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <!-- Car Slider -->
+  <section class="pt-5 pb-5 slider-desktop">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+        </div>
+        <div class="col-6 text-right">
+          <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev"
+            style="background-color: #ffcb05; border-color: #ffcb05;">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+          <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next"
+            style="background-color: #ffcb05; border-color: #ffcb05;">
+            <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="col-12">
+          <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                      <div class="card-body">
+                        <h4 class="card-title">Suzuki S-Cross hybrid</h4>
+                        <div class="center-container">
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="location"></ion-icon>Iasi</span>
+                          </p>
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="cash"></ion-icon> 15 euro/day</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
+                      <div class="card-body">
+                        <h4 class="card-title">Volkswagen T Roc</h4>
+                        <div class="center-container">
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="location"></ion-icon>Iasi</span>
+                          </p>
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="cash"></ion-icon> 15 euro/day</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
+                      <div class="card-body">
+                        <h4 class="card-title">KIA Ceed</h4>
+                        <div class="center-container">
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="location"></ion-icon>Iasi</span>
+                          </p>
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="cash"></ion-icon> 15 euro/day</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
+                      <div class="card-body">
+                        <h4 class="card-title">Car #4</h4>
+
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
+                      <div class="card-body">
+                        <h4 class="card-title">Car #5</h4>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
+                      <div class="card-body">
+                        <h4 class="card-title">Car #6</h4>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                      <div class="card-body">
+                        <h4 class="card-title">Car #7</h4>
+
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                      <div class="card-body">
+                        <h4 class="card-title">Car #8</h4>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                      <div class="card-body">
+                        <h4 class="card-title">Car #9</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Car Slider Mobile-->
+  <section class="pt-5 pb-5 slider-mobile">
+    <div class="container">
+      <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6 text-right">
+          <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators4" role="button" data-slide="prev"
+            style="background-color: #ffcb05; border-color: #ffcb05;">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+          <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators4" role="button" data-slide="next"
+            style="background-color: #ffcb05; border-color: #ffcb05;">
+            <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="col-12">
+          <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-12 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                      <div class="card-body">
+                        <h4 class="card-title">Suzuki S-Cross hybrid</h4>
+                        <div class="center-container">
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="location"></ion-icon>Iasi</span>
+                          </p>
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="cash"></ion-icon> 15 euro/day</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-12 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
+                      <div class="card-body">
+                        <h4 class="card-title">Volkswagen T Roc</h4>
+                        <div class="center-container">
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="location"></ion-icon>Iasi</span>
+                          </p>
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="cash"></ion-icon> 15 euro/day</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add similar modifications for other carousel items -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features Grid -->
+  <div class="features-container">
+    <div class="row first-row" style="margin-bottom: 80px;">
+      <div class="col-md-4 feature" style="text-align: left;">
+        <div class="card" style="width: 24rem; height: 18rem; margin: auto; padding: 15px 15px;">
+          <div class="card-body">
+            <ion-icon name="car-outline" size="large" style="color: #ffcb05;"></ion-icon>
+            <h5 class="card-title">Wide range of car models</h5>
+            <p class="card-text">Our fleet includes <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">over 100 latest generation</a> car models, of different classes,
+              including Premium brands, manual or automatic transmission cars, 4x4 SUV, Diesel or Hybrid engine cars.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 feature" style="text-align: left;">
+        <div class="card" style="width: 24rem; height: 18rem; margin: auto; padding: 15px 15px;">
+          <div class="card-body">
+            <ion-icon name="book-outline" size="large" style="color: #ffcb05;"></ion-icon>
+            <h5 class="card-title">Reserved car model warranty</h5>
+            <p class="card-text">We strive to offer you the car you want. Over 90% of our customers received the exact
+              reserved car model.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 feature" style="text-align: left;">
+        <div class="card" style="width: 24rem; height: 18rem; margin: auto; padding: 15px 15px;">
+          <div class="card-body">
+            <ion-icon name="cash-outline" size="large" style="color: #ffcb05;"></ion-icon>
+            <h5 class="card-title">Smart rates & no hidden fees</h5>
+            <p class="card-text">For each available car, you will receive 3 offers 
+              (<a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Budget</a>, 
+              <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Standard</a>, 
+              <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Plus</a>)
+              , with clear
+              information about rates, insurances, deposit/responsibility, included benefits and optional services.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 feature" style="text-align: left;">
+        <div class="card" style="width: 24rem; height: 18rem; margin: auto; padding: 15px 15px;">
+          <div class="card-body">
+            <ion-icon name="glasses-outline" size="large" style="color: #ffcb05;"></ion-icon>
+            <h5 class="card-title">24/7 services & assistance</h5>
+            <p class="card-text">You can pick-up and return your rented car at any time of day and night. In addition,
+              the +40752220222 emergency phone number is non-stop available.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 feature" style="text-align: left;">
+        <div class="card" style="width: 24rem; height: 18rem; margin: auto; padding: 15px 15px;">
+          <div class="card-body">
+            <ion-icon name="trail-sign-outline" size="large" style="color: #ffcb05;"></ion-icon>
+            <h5 class="card-title">One-way and international rental</h5>
+            <p class="card-text">For flexible travels, we offer <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">one-way rentals</a>. 
+              On special terms and conditions, <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">you can travel abroad</a> 
+              with selected car models.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 feature" style="text-align: left;">
+        <div class="card" style="width: 24rem; height: 18rem; margin: auto; padding: 15px 15px;">
+          <div class="card-body">
+            <ion-icon name="shield-outline" size="large" style="color: #ffcb05;"></ion-icon>
+            <h5 class="card-title">Optional services and additional protection</h5>
+            <p class="card-text">For a more comfortable and safer trip, you can choose for <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">optional services</a> (child
+              seat, GPS, snow chains, additional driver etc.) and for <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">additional protection plans and reduction of the
+                user`s responsibility</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Destinations Slider -->
+  <section class="pt-5 pb-5 private-transfers">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+        </div>
+        <div class="col-6 text-right">
+          <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators5" role="button" data-slide="prev"
+            style="background-color: #ffcb05; border-color: #ffcb05;">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+          <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators5" role="button" data-slide="next"
+            style="background-color: #ffcb05; border-color: #ffcb05;">
+            <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="col-12">
+          <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+
+                  <div class="col-md-6 mb-3">
+                    <div class="card">
+                      <div class="circle-icon">
+                        <ion-icon name="chevron-back-outline" size="large"></ion-icon>
+                        <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
+                      </div>
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                      
+                        <div class="card-body">
+                        <h4 class="card-title">Suzuki S-Cross hybrid</h4>
+                        <div class="center-container">
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="location"></ion-icon>Iasi - Oradea</span>
+                          </p>
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="cash"></ion-icon> From 250 euros (one-way)</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                    <div class="card">
+                      <div class="circle-icon">
+                        <ion-icon name="chevron-back-outline" size="large"></ion-icon>
+                        <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
+                      </div>
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                      
+                        <div class="card-body">
+                        <h4 class="card-title">Suzuki S-Cross hybrid</h4>
+                        <div class="center-container">
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="location"></ion-icon>Iasi - Oradea</span>
+                          </p>
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="cash"></ion-icon> From 250 euros (one-way)</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+
+                  <div class="col-md-6 mb-3">
+                    <div class="card">
+                      <div class="circle-icon">
+                        <ion-icon name="chevron-back-outline" size="large"></ion-icon>
+                        <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
+                      </div>
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                      
+                        <div class="card-body">
+                        <h4 class="card-title">Suzuki S-Cross hybrid</h4>
+                        <div class="center-container">
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="location"></ion-icon>Iasi - Oradea</span>
+                          </p>
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="cash"></ion-icon> From 250 euros (one-way)</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                    <div class="card">
+                      <div class="circle-icon">
+                        <ion-icon name="chevron-back-outline" size="large"></ion-icon>
+                        <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
+                      </div>
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                      
+                        <div class="card-body">
+                        <h4 class="card-title">Suzuki S-Cross hybrid</h4>
+                        <div class="center-container">
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="location"></ion-icon>Iasi - Oradea</span>
+                          </p>
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="cash"></ion-icon> From 250 euros (one-way)</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+
+                  <div class="col-md-6 mb-3">
+                    <div class="card">
+                      <div class="circle-icon">
+                        <ion-icon name="chevron-back-outline" size="large"></ion-icon>
+                        <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
+                      </div>
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                      
+                        <div class="card-body">
+                        <h4 class="card-title">Suzuki S-Cross hybrid</h4>
+                        <div class="center-container">
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="location"></ion-icon>Iasi - Oradea</span>
+                          </p>
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="cash"></ion-icon> From 250 euros (one-way)</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                    <div class="card">
+                      <div class="circle-icon">
+                        <ion-icon name="chevron-back-outline" size="large"></ion-icon>
+                        <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
+                      </div>
+                      <img class="img-fluid" alt="100%x280"
+                        src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                      
+                        <div class="card-body">
+                        <h4 class="card-title">Suzuki S-Cross hybrid</h4>
+                        <div class="center-container">
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="location"></ion-icon>Iasi - Oradea</span>
+                          </p>
+                          <p style="margin-bottom: 0;">
+                            <ion-icon name="cash"></ion-icon> From 250 euros (one-way)</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    <div class="row second-row">
+      <div class="col-md-4 feature" style="text-align: left;">
+        <div class="card" style="width: 24rem; height: 18rem; margin: auto; padding: 15px 15px;">
+          <div class="card-body">
+            <ion-icon name="car-outline" size="large" style="color: #ffcb05;"></ion-icon>
+            <h5 class="card-title">Confortable cars</h5>
+            <p class="card-text">Any car class will you choose for your transfer (Economy, Standard, Premium, Minibus),
+              you will enjoy a safe and comfortable journey to your destination.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 feature" style="text-align: left;">
+        <div class="card" style="width: 24rem; height: 18rem; margin: auto; padding: 15px 15px;">
+          <div class="card-body">
+            <ion-icon name="person-circle-outline" size="large" style="color: #ffcb05;"></ion-icon>
+            <h5 class="card-title">Experienced drivers</h5>
+            <p class="card-text">We are proud of our chauffeurs with experience in tourism and corporate services,
+              speakers of foreign languages, able to offer you a quality service.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 feature" style="text-align: left;">
+        <div class="card" style="width: 24rem; height: 18rem; margin: auto; padding: 15px 15px;">
+          <div class="card-body">
+            <ion-icon name="cash-outline" size="large" style="color: #ffcb05;"></ion-icon>
+            <h5 class="card-title">Smart rates</h5>
+            <p class="card-text">The rate is generated online depending on the details of your request (route, departure
+              time etc.), so you know from the beginning how much you pay for your private transfer.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 feature" style="text-align: left;">
+        <div class="card" style="width: 24rem; height: 18rem; height: 18rem; margin: auto; padding: 15px 15px;">
+          <div class="card-body">
+            <ion-icon name="man-outline" size="large" style="color: #ffcb05;"></ion-icon>
+            <h5 class="card-title">Passenger safety</h5>
+            <p class="card-text">We have implemented and respect the "<a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Passenger Safety Seal</a>", a set of rules designed to
+              guarantee the safety of our customers and passengers.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 feature" style="text-align: left;">
+        <div class="card" style="width: 24rem; height: 18rem; margin: auto; padding: 15px 15px;">
+          <div class="card-body">
+            <ion-icon name="glasses-outline" size="large" style="color: #ffcb05;"></ion-icon>
+            <h5 class="card-title">24/7 services & assistance</h5>
+            <p class="card-text">We are ready to provide you private transfers at any time, day and night. Even more,
+              our emergency phone number +40752220222 is non-stop available.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 feature" style="text-align: left;">
+        <div class="card" style="width: 24rem; height: 18rem; margin: auto; padding: 15px 15px;">
+          <div class="card-body">
+            <ion-icon name="trail-sign-outline" size="large" style="color: #ffcb05;"></ion-icon>
+            <h5 class="card-title">Corporate services</h5>
+            <p class="card-text">We are ready to offer you local <a href="#" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">transportation services for business trips</a>. Prestigious
+              partners and clients have already chosen us as their local transfer provider.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Review Slider -->
+  <section class="pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+        </div>
+        <div class="col-6 text-right">
+          <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators3" role="button" data-slide="prev"
+            style="background-color: #ffcb05; border-color: #ffcb05;">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+          <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators3" role="button" data-slide="next"
+            style="background-color: #ffcb05; border-color: #ffcb05;">
+            <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="col-12">
+          <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+
+                  <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div class="card border-warning mb-3" style="max-width: 18rem; height: 18rem;">
+                      <div class="card-header bg-transparent border-warning">Header1</div>
+                      <div class="card-body" style="overflow: auto;">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the card's content.Some quick example text to build on the card title and make up the bulk of
+                          the card's content.Some quick example text to build on the card title and make up the bulk of
+                          the card's content.Some quick example text to build on the card title and make up the bulk of
+                          the card's content.Some quick example text to build on the card title and make up the bulk of
+                          the card's content.Some quick example text to build on the card title and make up the bulk of
+                          the card's content.Some quick example text to build on the card title and make up the bulk of
+                          the card's content.Some quick example text to build on the card title and make up the bulk of
+                          the card's content.Some quick example text to build on the card title and make up the bulk of
+                          the card's content.Some quick example text to build on the card title and make up the bulk of
+                          the card's content.</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-warning">Footer</div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div class="card border-warning mb-3" style="max-width: 18rem; height: 18rem;">
+                      <div class="card-header bg-transparent border-warning">Header2</div>
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the card's content.</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-warning">Footer</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div class="card border-warning mb-3" style="max-width: 18rem; height: 18rem;">
+                      <div class="card-header bg-transparent border-warning">Header3</div>
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the card's content.</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-warning">Footer</div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+
+                  <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div class="card border-warning mb-3" style="max-width: 18rem; height: 18rem;">
+                      <div class="card-header bg-transparent border-warning">Header4</div>
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the card's content.</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-warning">Footer</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div class="card border-warning mb-3" style="max-width: 18rem; height: 18rem;">
+                      <div class="card-header bg-transparent border-warning">Header5</div>
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the card's content.</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-warning">Footer</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div class="card border-warning mb-3" style="max-width: 18rem; height: 18rem;">
+                      <div class="card-header bg-transparent border-warning">Header6</div>
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the card's content.</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-warning">Footer</div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+
+                  <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div class="card border-warning mb-3" style="max-width: 18rem; height: 18rem;">
+                      <div class="card-header bg-transparent border-warning">Header7</div>
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the card's content.</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-warning">Footer</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div class="card border-warning mb-3" style="max-width: 18rem; height: 18rem;">
+                      <div class="card-header bg-transparent border-warning">Header8</div>
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the card's content.</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-warning">Footer</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div class="card border-warning mb-3" style="max-width: 18rem; height: 18rem;">
+                      <div class="card-header bg-transparent border-warning">Header9</div>
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the card's content.</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-warning">Footer</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="d-flex flex-column h-100">
+
+
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0">
+      <div class="container py-4">
+        <div class="row gy-4 gx-5 align-items-center">
+          <!-- Image column -->
+          <div class="col-lg-2 col-md-6 mx-auto text-center text-md-left">
+            <img src="logo_white.svg" alt="Footer Image" class="img-fluid">
+          </div>
+
+          <!-- Car Services column -->
+          <div class="col-lg-2 col-md-6 mx-auto ms-4">
+            <h5 class="text-white mb-3">Car Services</h5>
+            <ul class="list-unstyled text-muted">
+              <li><a href="#">Rent a Car</a></li>
+              <li><a href="#">Private Transfers</a></li>
+              <li><a href="#">Rent for Business</a></li>
+              <li><a href="#">Drive & Fun</a></li>
+            </ul>
+          </div>
+
+          <!-- Company column -->
+          <div class="col-lg-2 col-md-6 mx-auto ms-4">
+            <h5 class="text-white mb-3">Company</h5>
+            <ul class="list-unstyled text-muted">
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Car Fleet</a></li>
+              <li><a href="#">Offers</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal column -->
+          <div class="col-lg-2 col-md-6 mx-auto ms-4">
+            <h5 class="text-white mb-3">Legal</h5>
+            <ul class="list-unstyled text-muted">
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">A.N.P.C</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin: 50px;">
+        <button type="button" class="btn btn-outline-light">Contact Us</button>
+        <div class="btn-group">
+          <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+          style="background-color: transparent; color: white; border: 1px solid white;">
+            Select yout language
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Română</a></li>
+            <li><a class="dropdown-item" href="#">English</a></li>
+          </ul>
+        </div>
+      </div>
+      
+
+      <div class="legal-images">
+        <a id="img-link" style="margin: 0;line-height: 1;padding: 0;text-decoration: none;" href="https://anpc.ro/ce-este-sal/" target="_blank" rel="nofollow">
+            <img style="display:inline-block;border:0;width:250px;margin:5px;" src="https://etamade-com.github.io/anpc-sal-sol-logo/anpc-sal.svg" alt="Solutionarea Alternativa a Litigiilor">
+        </a>
+        <img id="img-link" src="netopia.png" alt="Netopia Image" style="width: 400px; height: auto;">
+        <a id="img-link" style="margin: 0;line-height: 1;padding: 0;text-decoration: none;" href="https://ec.europa.eu/consumers/odr" target="_blank" rel="nofollow">
+            <img style="display:inline-block;border:0;width:250px;margin:5px;" src="https://etamade-com.github.io/anpc-sal-sol-logo/anpc-sol.svg" alt="Solutionarea Online a Litigiilor">
+        </a>
+      </div>
+
+      <div class="last" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-top: 50px;">
+        <p class="copyright-text" style="color: white; font-size: 15px; margin-bottom: 10px;">© S.C. Nord Tour S.R.L.</p>
+          <ul class="social-icons">
+            <ion-icon name="logo-facebook" style="color: white; margin-left: 20px;" size="large"></ion-icon>
+            <ion-icon name="logo-whatsapp" style="color: white;" size="large"></ion-icon>
+            <ion-icon name="logo-instagram" style="color: white;" size="large"></ion-icon>
+            <ion-icon name="logo-youtube" style="color: white;" size="large"></ion-icon>
+          </ul>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://car.travis.ro/vue/vue.global.js"></script>
+
+</body>
+
+<style lang="scss">
+
+.circle-icon {
+  width: 75px;
+  height: 75px;
+  background-color: #ffcb05;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  .slider-review .carousel-inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider-review .card {
+    margin: 0 auto;
+    max-width: 18rem;
+  }
+
+  .slider-desktop {
+    display: block;
+  }
+
+  .slider-mobile {
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .slider-desktop {
+      display: none;
+    }
+
+    .slider-mobile {
+      display: block;
+    }
+  }
+
+  .features-container {
+    padding: 20px;
+  }
+
+  .feature {
+    text-align: left;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .features-container .card {
+    transition: .15s ease-in-out;
+  }
+
+  .features-container .card:not(.private-transfers .card):hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+  .first-row {
+    background: url('blop.svg') center/cover no-repeat;
+  }
+
+  .second-row {
+    background: url('blop_2.svg') center/cover no-repeat;
+  }
+
+  .center-container ion-icon,
+  .center-container span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .feature {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 100px;
+
+  }
+
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card:hover {
+    cursor: pointer;
+  }
+
+  nav .navbar-nav .nav-link {
+    transition: color .2s ease-in-out;
+    font-size: 20px;
+    color: white;
+  }
+
+  nav .navbar-nav .nav-link:hover {
+    color: #ffcb05 !important;
+  }
+
+  nav .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  nav .navbar-nav .nav-item img {
+    margin-right: 5px;
+    width: 30px;
+    height: auto;
+  }
+
+  nav .navbar-nav .nav-item img:hover {
+    cursor: pointer;
+  }
+
+  .ion-icon:hover {
+    cursor: pointer;
+  }
+
+  .logo {
+    margin-left: 50px;
+  }
+
+  .search-image {
+    margin-right: 50px;
+  }
+
+  .search-image:hover {
+    cursor: pointer;
+  }
+
+  .navigation__checkbox {
+    display: none;
+  }
+
+  .navigation__button {
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem;
+    }
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    .navigation__button {
+      top: 1rem;
+      right: 2rem;
+    }
+  }
+
+  .navigation__background {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    background-image: radial-gradient(#ffcb05, #c69f04);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    .navigation__background {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    #carouselExampleIndicators {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    .navigation__background {
+      top: 1rem;
+      right: 2rem;
+    }
+
+    #carouselExampleIndicators {
+      display: none;
+    }
+  }
+
+  .navigation__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    overflow: auto;
+  }
+
+  .navigation__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navigation__item {
+    margin: 1rem;
+  }
+
+  .navigation__link:link,
+  .navigation__link:visited {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 300;
+    padding: .5rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 250%;
+    transition: all .4s;
+  }
+
+  .navigation__link:link span,
+  .navigation__link:visited span {
+    margin-right: 1.5rem;
+    display: inline-block;
+  }
+
+  .navigation__link:hover,
+  .navigation__link:active {
+    background-position: 100%;
+    color: #ffcb05;
+    transform: translateX(1rem);
+  }
+
+  .navigation__checkbox:checked~.navigation__background {
+    transform: scale(80);
+  }
+
+  .navigation__checkbox:checked~.navigation__nav {
+    opacity: 1;
+    width: 100%;
+  }
+
+  .navigation__icon {
+    position: relative;
+    margin-top: 1.8rem;
+  }
+
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+    width: 2rem;
+    height: 2px;
+    background-color: #333;
+    display: inline-block;
+  }
+
+  .navigation__icon::before,
+  .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+  }
+
+  .navigation__icon::before {
+    top: -.8rem;
+  }
+
+  .navigation__icon::after {
+    top: .8rem;
+  }
+
+  .navigation__button:hover .navigation__icon::before {
+    top: -1rem;
+  }
+
+  .navigation__button:hover .navigation__icon::after {
+    top: 1rem;
+  }
+
+  .navigation__checkbox:checked+.navigation__button .navigation__icon {
+    background-color: transparent;
+  }
+
+  .navigation__checkbox:checked+.navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  .navigation__checkbox:checked+.navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  @media only screen and (min-width: 769px) {
+
+    .navigation__checkbox,
+    .navigation__button,
+    .navigation__background {
+      display: none;
+    }
+  }
+
+  .text-small {
+    font-size: 0.9rem;
+  }
+
+  a:not(.features-container) {
+  text-decoration: none;
+  transition: all 0.3s;
+  color: white;
+  opacity: 0.5;
+}
+
+  a#img-link {
+  opacity: 1;
+}
+
+a:not(.features-container):hover,
+a:not(.features-container):focus {
+  text-decoration: none;
+  opacity: 1;
+}
+
+  footer {
+    background: #000;
+    line-height: 35px;
+  }
+
+  .social-icons {
+    list-style: none;
+    padding: 0;
+  }
+
+  .social-icons ion-icon {
+    margin-right: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  .social-icons ion-icon:hover {
+    opacity: 1;
+    transition: all 0.3s;
+  }
+
+  .legal-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .social-icons ion-icon {
+      margin-right: 15px;
+    }
+
+    .legal-images {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #netopia-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+</style>
+
+</html>
